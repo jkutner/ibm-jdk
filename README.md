@@ -1,6 +1,6 @@
 # IBM J9 JDK for Heroku
 
-This repository prepares an IBM J9 JDK for running on Heroku. The IBM J9 JDK cannot
+This repository prepares an IBM JDK for running on Heroku. The IBM JDK cannot
 be installed by Heroku due to the license policy of the runtime.
 
 ## Usage
