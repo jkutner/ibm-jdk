@@ -8,4 +8,4 @@ services:
       - ../vendor:/app/vendor/
       - ../builds:/app/builds/
     environment:
-      JDK_VERSION: ${JDK_VERSION}
+      - JDK_VERSION
