@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 export JDK_VERSION="8.0-3.10"
 
@@ -9,8 +9,8 @@ if [ ! -f vendor/ibm-java-sdk-${JDK_VERSION}-x86_64-archive.bin ]; then
   exit 1
 fi
 
-docker-compose build
-docker-compose run tar
+docker-compose -f docker/ibm.yml build
+docker-compose -f docker/ibm.yml run tar
 
 echo ""
 echo "Build complete!"

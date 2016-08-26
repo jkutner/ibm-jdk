@@ -1,0 +1,11 @@
+version: '2'
+services:
+  tar:
+    build:
+      context: ../
+      dockerfile: docker/Dockerfile
+    volumes:
+      - ../vendor:/app/vendor/
+      - ../builds:/app/builds/
+    environment:
+      JDK_VERSION: ${JDK_VERSION}
