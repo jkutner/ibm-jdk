@@ -1,4 +1,4 @@
-FROM heroku/cedar:14
+FROM ibmjava:sdk
 
 WORKDIR /app
 

@@ -5,7 +5,6 @@ services:
       context: ../
       dockerfile: docker/Dockerfile
     volumes:
-      - ../vendor:/app/vendor/
       - ../builds:/app/builds/
     environment:
       - JDK_VERSION
